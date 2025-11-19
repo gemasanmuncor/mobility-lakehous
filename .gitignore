@@ -1,0 +1,18 @@
+# Ignorar datasets pesados
+data/raw/
+data/bronze/
+data/silver/
+data/gold/
+*.parquet
+*.csv
+*.json
+
+# Ignorar la base de datos DuckDB
+*.duckdb
+
+# Ignorar el entorno virtual
+venv/
+
+# Ignorar cachés
+__pycache__/
+.ipynb_checkpoints/
