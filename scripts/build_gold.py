@@ -6,9 +6,8 @@ DB_PATH = "lakehouse/duckdb/mobility.duckdb"
 def build_gold(polygon, start_date, end_date):
     con = duckdb.connect(DB_PATH)
 
-    # =========================
+    
     # BQ1 – Typical mobility patterns
-    # =========================
     con.execute("""
     CREATE OR REPLACE TABLE gold_q1_typical_patterns AS
     SELECT
@@ -20,9 +19,7 @@ def build_gold(polygon, start_date, end_date):
     ORDER BY mes, tipo_movilidad
     """)
 
-    # =========================
     # BQ2 – Infrastructure gap (simple & clear)
-    # =========================
     con.execute("""
     CREATE OR REPLACE TABLE gold_q2_gap_ranking AS
     SELECT

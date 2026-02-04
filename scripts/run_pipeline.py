@@ -7,7 +7,7 @@ from scripts.generate_outputs import generate_outputs
 
 
 def run_pipeline(polygon: str, start_date: str, end_date: str):
-    print("🚀 Running mobility pipeline")
+    print("Running mobility pipeline")
     print("Polygon:", polygon)
     print("Start date:", start_date)
     print("End date:", end_date)

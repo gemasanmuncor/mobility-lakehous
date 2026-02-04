@@ -7,7 +7,7 @@ import logging
 def run_pipeline_task(**context):
     """
     Task wrapper para Airflow.
-    Lee parámetros del Trigger DAG (conf) y llama al pipeline real.
+    Asi leo  parámetros del Trigger DAG  y llama al pipeline real.
     """
 
     dag_run = context.get("dag_run")
@@ -17,7 +17,7 @@ def run_pipeline_task(**context):
     start_date = conf.get("start_date")
     end_date = conf.get("end_date")
 
-    logging.info("🚀 Running mobility pipeline")
+    logging.info("Running mobility pipeline")
     logging.info(f"Polygon: {polygon}")
     logging.info(f"Start date: {start_date}")
     logging.info(f"End date: {end_date}")
